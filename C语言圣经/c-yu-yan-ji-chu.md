@@ -9,17 +9,17 @@ icon: layer-plus
 
 ### 在C语言的编译链接中，分为以下四个阶段：
 
-<p align="center">​ 源文件( *.c源文件/ *.h头文件 )</p>
+​ 源文件( \*.c源文件/ \*.h头文件 )
 
-<p align="center">​ 预编译( *.i预编译文件 ) gcc -E main.c -o main.i</p>
+​ 预编译( \*.i预编译文件 ) gcc -E main.c -o main.i
 
-<p align="center">​ 编 译( *.s汇编文件 )(从上到下) gcc -S main.i -o main.s</p>
+​ 编 译( \*.s汇编文件 )(从上到下) gcc -S main.i -o main.s
 
-<p align="center">​ 汇 编( *.o/ *.obj二进制目标文件 ) gcc -c main.s -o main.o</p>
+​ 汇 编( \*.o/ \*.obj二进制目标文件 ) gcc -c main.s -o main.o
 
-<p align="center">​ 链 接( *.exe可执行文件 ) gcc -o main.o -o main</p>
+​ 链 接( \*.exe可执行文件 ) gcc -o main.o -o main
 
-<p align="center">​ 执 行 --> 进程(从main函数开始)</p>
+​ 执 行 --> 进程(从main函数开始)
 
 其中每一步都十分重要，不可或缺，接下来的部分是对每一步的详细解释
 
@@ -117,8 +117,9 @@ gcc -o main main.c add.c max.c  # 直接生成可执行程序main
 
 以下是一个经典的 C 语言入门示例程序 ——"Hello World" 程序。这段代码虽简短，却完整展示了 C 程序的基本结构，包含注释、预编译处理指令、主函数、执行语句及返回值等核心组成部分，是初学者理解 C 语言程序运行逻辑的基础范例。
 
+{% code title="hello.c " %}
 ```c
-//hello.c                      //注释 /* */不允许嵌套使用
+//注释 /* */不允许嵌套使用
 #include <stdio.h>             //预编译处理
 int main(void)                 //主函数 程序入口
 {
@@ -126,6 +127,7 @@ int main(void)                 //主函数 程序入口
     return 0;
 }
 ```
+{% endcode %}
 
 ## C源程序结构特点
 
